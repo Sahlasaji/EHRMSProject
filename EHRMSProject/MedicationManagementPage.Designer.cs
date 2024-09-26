@@ -1,0 +1,66 @@
+﻿namespace EHRMSProject
+{
+    partial class MedicationManagementPage
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblMedicationManagementPage = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblMedicationManagementPage
+            // 
+            this.lblMedicationManagementPage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblMedicationManagementPage.Font = new System.Drawing.Font("Verdana", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedicationManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.lblMedicationManagementPage.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblMedicationManagementPage.Name = "lblMedicationManagementPage";
+            this.lblMedicationManagementPage.Size = new System.Drawing.Size(1333, 77);
+            this.lblMedicationManagementPage.TabIndex = 1;
+            this.lblMedicationManagementPage.Text = "Medication Management Page";
+            this.lblMedicationManagementPage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // MedicationManagementPage
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1333, 652);
+            this.Controls.Add(this.lblMedicationManagementPage);
+            this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Name = "MedicationManagementPage";
+            this.Text = "MedicationManagementPage";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MedicationManagementPage_FormClosing);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblMedicationManagementPage;
+    }
+}
