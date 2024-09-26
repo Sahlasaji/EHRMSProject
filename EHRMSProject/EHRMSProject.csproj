@@ -46,46 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppointmentSchedulingPage.cs">
+    <Compile Include="Database\ListMemoryRepo.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Pages\AppointmentSchedulingPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AppointmentSchedulingPage.Designer.cs">
+    <Compile Include="Pages\AppointmentSchedulingPage.Designer.cs">
       <DependentUpon>AppointmentSchedulingPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="AuditTrailPage.cs">
+    <Compile Include="Pages\AuditTrailPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AuditTrailPage.Designer.cs">
+    <Compile Include="Pages\AuditTrailPage.Designer.cs">
       <DependentUpon>AuditTrailPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="BillingAndInsurancePage.cs">
+    <Compile Include="Pages\BillingAndInsurancePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BillingAndInsurancePage.Designer.cs">
+    <Compile Include="Pages\BillingAndInsurancePage.Designer.cs">
       <DependentUpon>BillingAndInsurancePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="DashboardPage.cs">
+    <Compile Include="Pages\DashboardPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DashboardPage.Designer.cs">
+    <Compile Include="Pages\DashboardPage.Designer.cs">
       <DependentUpon>DashboardPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="EHRRecordsManagementPage.cs">
+    <Compile Include="Pages\EHRRecordsManagementPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EHRRecordsManagementPage.Designer.cs">
+    <Compile Include="Pages\EHRRecordsManagementPage.Designer.cs">
       <DependentUpon>EHRRecordsManagementPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="HelpAndSupportPage.cs">
+    <Compile Include="Pages\HelpAndSupportPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HelpAndSupportPage.Designer.cs">
+    <Compile Include="Pages\HelpAndSupportPage.Designer.cs">
       <DependentUpon>HelpAndSupportPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginPage.cs">
+    <Compile Include="Pages\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginPage.Designer.cs">
+    <Compile Include="Pages\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPageForm.cs">
@@ -94,85 +96,86 @@
     <Compile Include="MainPageForm.Designer.cs">
       <DependentUpon>MainPageForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MedicationManagementPage.cs">
+    <Compile Include="Pages\MedicationManagementPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MedicationManagementPage.Designer.cs">
+    <Compile Include="Pages\MedicationManagementPage.Designer.cs">
       <DependentUpon>MedicationManagementPage.cs</DependentUpon>
     </Compile>
     <Compile Include="MyConfig.cs" />
-    <Compile Include="NewUser.cs">
+    <Compile Include="Pages\NewUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewUser.Designer.cs">
+    <Compile Include="Pages\NewUser.Designer.cs">
       <DependentUpon>NewUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientProfilePage.cs">
+    <Compile Include="Pages\PatientProfilePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PatientProfilePage.Designer.cs">
+    <Compile Include="Pages\PatientProfilePage.Designer.cs">
       <DependentUpon>PatientProfilePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientRegistrationPage.cs">
+    <Compile Include="Pages\PatientRegistrationPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PatientRegistrationPage.Designer.cs">
+    <Compile Include="Pages\PatientRegistrationPage.Designer.cs">
       <DependentUpon>PatientRegistrationPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReportingPage.cs">
+    <Compile Include="Pages\ReportingPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportingPage.Designer.cs">
+    <Compile Include="Pages\ReportingPage.Designer.cs">
       <DependentUpon>ReportingPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="SettingsPage.cs">
+    <Compile Include="Pages\SettingsPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SettingsPage.Designer.cs">
+    <Compile Include="Pages\SettingsPage.Designer.cs">
       <DependentUpon>SettingsPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserManagementPage.cs">
+    <Compile Include="Pages\UserManagementPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserManagementPage.Designer.cs">
+    <Compile Include="Pages\UserManagementPage.Designer.cs">
       <DependentUpon>UserManagementPage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AppointmentSchedulingPage.resx">
+    <Compile Include="Repos\IRepo.cs" />
+    <EmbeddedResource Include="Pages\AppointmentSchedulingPage.resx">
       <DependentUpon>AppointmentSchedulingPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AuditTrailPage.resx">
+    <EmbeddedResource Include="Pages\AuditTrailPage.resx">
       <DependentUpon>AuditTrailPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BillingAndInsurancePage.resx">
+    <EmbeddedResource Include="Pages\BillingAndInsurancePage.resx">
       <DependentUpon>BillingAndInsurancePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DashboardPage.resx">
+    <EmbeddedResource Include="Pages\DashboardPage.resx">
       <DependentUpon>DashboardPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EHRRecordsManagementPage.resx">
+    <EmbeddedResource Include="Pages\EHRRecordsManagementPage.resx">
       <DependentUpon>EHRRecordsManagementPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HelpAndSupportPage.resx">
+    <EmbeddedResource Include="Pages\HelpAndSupportPage.resx">
       <DependentUpon>HelpAndSupportPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginPage.resx">
+    <EmbeddedResource Include="Pages\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPageForm.resx">
       <DependentUpon>MainPageForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MedicationManagementPage.resx">
+    <EmbeddedResource Include="Pages\MedicationManagementPage.resx">
       <DependentUpon>MedicationManagementPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewUser.resx">
+    <EmbeddedResource Include="Pages\NewUser.resx">
       <DependentUpon>NewUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientProfilePage.resx">
+    <EmbeddedResource Include="Pages\PatientProfilePage.resx">
       <DependentUpon>PatientProfilePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientRegistrationPage.resx">
+    <EmbeddedResource Include="Pages\PatientRegistrationPage.resx">
       <DependentUpon>PatientRegistrationPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -184,13 +187,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ReportingPage.resx">
+    <EmbeddedResource Include="Pages\ReportingPage.resx">
       <DependentUpon>ReportingPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SettingsPage.resx">
+    <EmbeddedResource Include="Pages\SettingsPage.resx">
       <DependentUpon>SettingsPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserManagementPage.resx">
+    <EmbeddedResource Include="Pages\UserManagementPage.resx">
       <DependentUpon>UserManagementPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

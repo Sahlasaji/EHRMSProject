@@ -84,6 +84,7 @@
             this.btnLoad.TabIndex = 3;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnCreate
             // 
@@ -122,6 +123,7 @@
             this.Text = "UserManagementPage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserManagementPage_FormClosing);
+            this.Load += new System.EventHandler(this.UserManagementPage_Load);
             this.ResumeLayout(false);
 
         }
