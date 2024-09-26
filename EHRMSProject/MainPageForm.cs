@@ -15,6 +15,7 @@ namespace EHRMSProject
         public MainPageForm()
         {
             InitializeComponent();
+            MyConfig.mainPage = this;
         }
         private LoginPage loginPage = new LoginPage();
 

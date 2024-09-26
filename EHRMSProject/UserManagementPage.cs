@@ -16,11 +16,19 @@ namespace EHRMSProject
         {
             InitializeComponent();
         }
+        private NewUser frmNewUser = new NewUser();
 
         private void UserManagementPage_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
             this.Hide();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            frmNewUser.MdiParent = MyConfig.mainPage;
+            frmNewUser.Show();
+            frmNewUser.Activate();
         }
     }
 }

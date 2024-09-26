@@ -100,6 +100,13 @@
     <Compile Include="MedicationManagementPage.Designer.cs">
       <DependentUpon>MedicationManagementPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyConfig.cs" />
+    <Compile Include="NewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUser.Designer.cs">
+      <DependentUpon>NewUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="PatientProfilePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MedicationManagementPage.resx">
       <DependentUpon>MedicationManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUser.resx">
+      <DependentUpon>NewUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientProfilePage.resx">
       <DependentUpon>PatientProfilePage.cs</DependentUpon>
